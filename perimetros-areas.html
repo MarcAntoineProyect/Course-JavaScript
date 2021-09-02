@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/styles.css">
+	<title>Figuras geometricas</title>
+</head>
+<body>
+	<header>
+		<a href="index.html"><h2>💎 Calculator</h2></a>
+		<nav>
+			<ul>
+				<li><a href="perimetros-areas.html">Perimetros y areas</a></li>
+				<li><a href="porcentajes.html">Porcentajes</a></li>
+				<li><a href="">Potenciasiones</a></li>
+				<li><a href="">Scripts</a></li>
+			</ul>
+		</nav>
+		<a class="button-login" href="">Registrate</a>
+	</header>
+	<main>
+		<div class="background-image">
+			<img src="./fondo-matematicas_23-2148146270.jpg" alt="">
+			<img src="./matematicas-e1581735212109.jpg" alt="">
+		</div>
+		<section class="formules">
+			<form class="formules__cuadrado" action="">
+				<label for="inputCuadrado">Indica cuando mide el lado del cuadrado:</label>
+				<input id="inputCuadrado" type="number">
+				<div class="container-buttons">
+					<button type="button" onclick="calcularPerimetroCuadrado()">Calcular perímetro</button>
+					<button type="button" onclick="calcularAreaCuadrado()">Calcular área</button>
+				</div>
+			</form>
+			<form class="formules__triangulo" action="">
+				<label for="inputTriangulo">Indica cuando miden los lados del triangulo:</label>
+				<input id="ladoTriangulo1" type="number">
+				<input id="ladoTriangulo2" type="number">
+				<input id="ladoTriangulo3" type="number">
+				<div class="container-buttons">
+					<button type="button" onclick="calcularPerimetroTriangulo()">Calcular perímetro</button>
+					<!-- <button type="button" onclick="alturaTrianguloIsosceles()">Calcular Altura</button> -->
+					<button type="button" onclick="calcularAreaTriangulo()">Calcular Area</button>
+				</div>
+			</form>
+			<form class="formules__circulo" action="">
+				<label for="inputCirculo">Indica cuando mide el radio del circulo:</label>
+				<input id="inputCirculo" type="number">
+				<div class="container-buttons">
+					<button type="button" onclick="calcularPerimetroCirculo()">Calcular perímetro</button>
+					<button type="button" onclick="calcularAreaCirculo()">Calcular área</button>
+				</div>
+			</form>
+		</section>
+	</main>
+
+	<footer>
+		<ul>
+			<li>Contacto</li>
+			<li>Razon</li>
+			<li>Telefono</li>
+			<li>Redes Sociales</li>
+		</ul>
+	</footer>
+
+	<script src="figuras.js"></script>
+</body>
+</html>
